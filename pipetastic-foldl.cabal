@@ -1,0 +1,35 @@
+name:          pipetastic-foldl
+version:       0.0.0.1
+license:       BSD3
+license-file:  LICENSE
+data-files:    
+author:        Daniel Díaz Carrete
+maintainer:    diaz_carrete@yahoo.com
+category:      System
+build-type:    Simple
+cabal-version: >= 1.10
+Synopsis:      pipes parsers -> foldl folds
+
+Extra-Source-Files:
+    README.md
+
+Library
+    default-language: Haskell2010
+    hs-source-dirs: src
+    exposed-modules: 
+        Control.Foldl.Pipes
+    other-modules: 
+    ghc-options: -Wall -threaded -O2
+    build-depends:         
+        base >= 4.4 && < 5,
+        transformers >= 0.2 && < 0.5,
+        free >= 4.2 && < 5,
+        pipes >= 4.1.3 && < 4.2,
+        pipes-concurrency >= 2.0.2 && < 3,
+        pipes-parse >=3.0.1 && <3.1,
+        foldl >= 1.0.7
+
+Source-repository head
+    type:     git
+    location: https://github.com/danidiaz/pipetastic-foldl.git
+
